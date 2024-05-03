@@ -1,12 +1,41 @@
 @import url("https://use.fontawesome.com/releases/v5.15.3/css/all.css");
-/*@import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");*/
 
 body {
     padding: 0;
     margin: 0;
 }
 
-/* cssgradient.io */
+.viewport {
+    height: 100vh;
+    position: relative;
+}
+
+.card {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-icon {
+    position: relative;
+    left: -36px;
+    top: -14px;
+}
+
+.card-icon i {
+    color: white;
+    font-size: 22px;
+}
+
+img {
+    box-shadow: 0 0 8px 1px #2d2d2d;
+    border-radius: 6px;
+}
+
 .blue {
     background: rgb(0, 94, 162);
     background: linear-gradient(
@@ -23,24 +52,4 @@ body {
             rgba(185, 38, 117, 1) 0%,
             rgba(198, 79, 62, 1) 53%,
             rgba(220, 122, 0, 1) 100%);
-}
-
-.viewport {
-    height: 100vh;
-    position: relative;
-}
-
-.card {
-    margin: 0;
-    padding: 0;
-    width: fit-content;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-img {
-    box-shadow: 0 0 8px 1px #2d2d2d;
-    border-radius: 6px;
 }
