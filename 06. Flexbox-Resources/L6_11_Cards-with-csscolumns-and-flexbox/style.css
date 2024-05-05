@@ -1,0 +1,75 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    background: rgb(238, 238, 238);
+    padding: 0;
+    margin: 0;
+}
+
+article {
+    background: #FFFFFF;
+}
+
+.cards-layout-title {
+    font-size: 33px;
+    font-family: Georgia, serif;
+}
+
+.cards-layout {
+    max-width: 1300px;
+    margin: 70px auto;
+}
+
+.card {
+    box-shadow: 0 0 1px black;
+    border-radius: 6px;
+    margin-right: 22px;
+    margin-bottom: 22px;
+    max-width: 350px;
+}
+
+.card-header img {
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-footer {
+    border-top: 1px solid grey;
+    padding: 10px;
+}
+
+.masonry .card {
+    display: inline-block;
+    vertical-align: top;
+    /*width: 28%;*/
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex .cards-layout-title {
+    flex-basis: 100%;
+}
+
+.flex .card {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex .card .card-content {
+    flex-grow: 1;
+}
