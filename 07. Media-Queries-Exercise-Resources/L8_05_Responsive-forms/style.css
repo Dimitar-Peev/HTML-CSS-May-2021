@@ -1,0 +1,101 @@
+@import "https://use.fontawesome.com/releases/v6.1.2/css/all.css";
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+fieldset {
+    max-width: 450px;
+    padding: 0;
+    margin: 100px auto;
+    position: relative;
+}
+
+h1, form {
+    border: 1px solid black;
+    border-radius: 2px;
+    box-shadow: 0 0 6px 0 grey;
+}
+
+legend {
+    background: #F8F8F8;
+    padding: 12px;
+    font-weight: 400;
+    border: 1px solid black;
+    border-radius: 4px;
+    position: absolute;
+    top: -20px;
+    min-width: 36%;
+    padding-right: 80px;
+}
+
+form {
+    padding: 50px 20px 20px 20px;
+    background: #F8F8F8;
+    box-shadow: 0 0 6px 0 grey;
+}
+
+label {
+    width: 100%;
+    position: relative;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin: 0 0;
+}
+
+.label-text {
+    display: block;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input {
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    padding: 6px 10px 6px 30px;
+    width: 100%;
+}
+
+label i {
+    position: absolute;
+    top: 7px;
+    left: 8px;
+}
+
+.btn {
+    background-color: #2d2d2d;
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+    padding: 9px 15px;
+    margin-top: 20px;
+}
+
+@media all and (max-width: 700px) {
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .label-text {
+        margin-bottom: 10px;
+    }
+}
+
+@media all and (max-width: 430px) {
+    main {
+        margin: 100px 20px;
+    }
+}
