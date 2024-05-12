@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    padding: 15px 80px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 1px 5px -2px black;
+    background: white;
+}
+
+.nav-menu {
+    display: flex;
+    padding: 0;
+}
+
+.nav-menu li {
+    list-style: none;
+    margin: 0 6px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #54536D;
+    font-weight: 500;
+}
+
+.nav-menu li a.btn {
+    background: #9B5DC6;
+    padding: 8px 14px;
+    border-radius: 22px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+
+@media all and (max-width: 1200px) {
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-img {
+        margin-bottom: 15px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+    }
+
+    .nav-menu li {
+        margin: 10px;
+    }
+}
+
+@media all and (max-width: 570px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.diploma-and-certificates {
+    padding: 40px 80px;
+    display: flex;
+    overflow: hidden;
+}
+
+.diploma-and-certificates-content {
+    margin-right: 40px;
+}
+
+.diploma-and-certificates-content-title {
+    color: #54536D;
+}
+
+.diploma-and-certificates-content-text-subtitle {
+    color: #54536D;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.diploma-and-certificates-img {
+    position: relative;
+}
+
+.diploma-and-certificates-img::before {
+    border-radius: 50%;
+    content: '';
+    background: #54536D;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: -255px;
+    z-index: -1;
+}
+
+.diploma-and-certificates-img::after {
+    z-index: 1;
+    background: url("resources_SoftUni_page/images/award.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -90px;
+    right: -125px;
+    content: '';
+    width: 200px;
+    height: 200px;
+}
